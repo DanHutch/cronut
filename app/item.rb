@@ -13,24 +13,24 @@ class Item
 		@type = data["type"]
 		@name = data["name"]
 		@ppu = data["ppu"]
-		@batters_data = data["batters"]["batter"]
-		@toppings_data = data["topping"]
+		@_batters_data = data["batters"]["batter"]
+		@_toppings_data = data["topping"]
 	end
 
 	def add_batters
 		@batters = []
-		@batters_data.each do |batter_data|
+		@_batters_data.each do |batter_data|
 			@batters << Batter.new(batter_data)
 		end
-		@batters_data = "batters made"
+		@_batters_data = "batters made"
 	end
 
 	def add_toppings
 		@toppings = []
-		@toppings_data.each do |topping_data|
+		@_toppings_data.each do |topping_data|
 			@toppings << Topping.new(topping_data)
 		end
-		@toppings_data = "toppings made"
+		@_toppings_data = "toppings made"
 	end
 
 end

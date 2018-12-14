@@ -8,6 +8,6 @@ bakery.items.each do |item|
 	item.add_toppings
 end
 
-
+#this pry is here so you can call bakery.items from the command line in the pry and see all the items, with their respective batters and toppings.
 binding.pry
 
