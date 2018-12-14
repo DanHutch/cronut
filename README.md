@@ -1,5 +1,11 @@
 # Cronuts, Go Nuts!
 
+
+## Running this app:
+simply open this app and call `ruby app/runner.rb` from the command line to open the Bakery! this will result in a pry session, from which calling `bakery.items` will reveal all the items within. 
+
+
+
 [Link](https://www.youtube.com/watch?v=V_5fwEUJzK0)
 
 
